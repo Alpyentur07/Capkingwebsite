@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - Sipariş Ekle</title>
+    <style>
+        body {
+            
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .admin-panel {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select,
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            background-color: #333;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            background-color: #555;
+        }
+
+        button {
+            background-color: #1aacac;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #108c8c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="admin-panel">
+        <h2>Sipariş Ekle</h2>
+
+        <label for="kategoriler">Kategoriler:</label>
+        <select id="kategoriler">
+            <option value="iphone">İphone</option>
+            <option value="samsung">Samsung</option>
+            <option value="xiaomi">Xiaomi</option>
+        </select>
+
+        <label for="fiyat">Fiyat:</label>
+        <input type="text" id="fiyat" placeholder="Fiyatı girin">
+
+        <label for="dosya">Dosya Yükle:</label>
+        <input type="file" id="dosya" accept=".jpg, .jpeg, .png">
+
+        <button>Siparişi Ekle</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Öneri ve Şikayetler</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/Cap King (2).png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+  <style>
+   /* Form özelleştirmeleri */
+form {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f2f2f2;
+  border: 1px solid #000  ;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+form button {
+  background: #1aacac;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #000;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header_section_top">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="custom_menu">
+            <ul>
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="en-cok-satilan.html">En Çok Satanlar</a></li>
+              <li><a href="indirimler.html">İndirimler</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="birimlerimiz.html">Birimlerimiz</a></li>
+              <li><a href="admin_panel_giris.html">Admin Paneli</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header_section">
+    <div class="container">
+      <div class="containt_main">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Anasayfa</a>
+          <a href="en-cok-satilan.html">En Çok Satanlar</a>
+          <a href="game-of-thrones.html">Game Of Thrones Koleksiyonu</a>
+          <a href="batman.html">Batman Koleksiyonu</a>
+          <a href="looney-tones.html">Looney Toones Koleksiyonu</a>
+          <a href="indirimler.html">İndirimler</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jewellery_section">
+    <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="jewellery_section">
+              <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container">
+                      <h1 style="color: black" class="fashion_taital">
+                        <b>Öneri ve Şikayet Formu</b>
+                      </h1>
+                      <div class="fashion_section_2">
+                        <!-- Öneri ve Şikayet Formu -->
+                        <form action="mail_gonder.php" method="post" onsubmit="return showSuccessMessage()">
+                          <div class="form-group">
+                            <label for="ad">Adınız:</label>
+                            <input type="text" id="ad" name="ad" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">E-posta Adresiniz:</label>
+                            <input type="email" id="email" name="email" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="mesaj">Öneri veya Şikayetiniz:</label>
+                            <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+                          </div>
+                          <button type="submit">Gönder</button>
+                        </form>
+                        <div id="successMessage" style="display: none; color: green;">Öneri ve Şikayetiniz başarıyla oluşturuldu!</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_section layout_padding">
+    <div class="container">
+      <div class="footer_logo">
+        <a href="index.html"><img src="images/a1.png" /></a>
+      </div>
+      <div class="input_bt">
+        <input type="text" class="mail_bt" placeholder="Email Adresi" name="Email Adresi" />
+        <span class="subscribe_bt" id="basic-addon2"><a href="oneri-sikayet.html">Şikayet ve Öneriler</a></span>
+      </div>
+      <div class="footer_menu">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="en-cok-satilan.html">En Çok Satanlar</a></li>
+          <li><a href="indirimler.html">İndirimler</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="birimlerimiz.html">Birimlerimiz</a></li>
+          <li><a href="admin_panel_giris.html">Admin Paneli</a></li>
+        </ul>
+      </div>
+      <div class="location_main">İletişim Numarası: <a href="#"> <i class="fa fa-phone" style="font-size:16px;color:#1aacac"></i> 0538 926 44 33 </a></div>
+    </div>
+  </div>
+  <div class="copyright_section">
+    
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function showSuccessMessage() {
+      var successMessage = document.getElementById("successMessage");
+      successMessage.style.display = "block";
+      return false; // Formun gerçekten gönderilmesini engellemek için false döndürüldü
+    }
+  </script>
+</body>
+</html>
